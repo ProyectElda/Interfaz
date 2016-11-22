@@ -5,6 +5,8 @@
  */
 package interfazgrafica;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author bakka
@@ -125,6 +127,11 @@ public class InicioSesion extends javax.swing.JFrame {
            textName.setText("");
            textPassword.setText("");
            new InicioSesion().setVisible(false);
+       }
+       else{
+           JOptionPane.showMessageDialog(null,"Error!, Cuenta o Contraseña no validos");
+           textName.setText("");
+           textPassword.setText("");
        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
