@@ -26,6 +26,7 @@ public class GraficaBarras extends JFrame{
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setVisible(true);
         init();
+        this.setResizable(false);
     }
 
     private void init() {
@@ -46,7 +47,7 @@ public class GraficaBarras extends JFrame{
         // Creando el Grafico
         JFreeChart chart = ChartFactory.createBarChart3D("Tiempo en ruta por unidad","Unidades", "Tiempo (Hrs)", dataset, PlotOrientation.VERTICAL, true,true, false);
         chart.setBackgroundPaint(Color.getColor("#040D68"));
-        chart.getTitle().setPaint(Color.white); 
+        chart.getTitle().setPaint(Color.black); 
         CategoryPlot p = chart.getCategoryPlot(); 
         p.setRangeGridlinePaint(Color.red); 
         // Mostrar Grafico

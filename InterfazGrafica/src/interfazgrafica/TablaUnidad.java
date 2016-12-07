@@ -5,21 +5,19 @@
  */
 package interfazgrafica;
 
-import javax.swing.JScrollPane;
-
 /**
  *
  * @author bakka
  */
-public class TablaRegistroUnidades extends javax.swing.JFrame {
+public class TablaUnidad extends javax.swing.JFrame {
 
     /**
-     * Creates new form TablaRegistroUnidades
+     * Creates new form TablaUnidad
      */
-    public TablaRegistroUnidades() {
-        
+    public TablaUnidad() {
+        //setLocationRelativeTo(null);
+        //panelUnidades.setVisible(false);
         initComponents();
-        setLocationRelativeTo(null);
         this.setResizable(false);
 
     }
@@ -33,53 +31,42 @@ public class TablaRegistroUnidades extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tableUnidades = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tableUnidades.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {" "," ", " " , " ", " ", " ", " ", " ", " "," "}
+                {"Unidad A", "Juan Enriquez Gonalez"    , "Mercado Hidalgo", "14:15", "Base Coca", "14:02", "0 Horas, 13 Minutos","0 Horas, 15 Minutos", "2 Minutos"},
+                {"Unidad B", "Luis Ojeda Ramirez"       , "Vips", "14:11", "Soriana Boulevart", "14:05", "0 Horas, 6 Minutos","0 Horas, 10 Minutos","4 Minutos"},
+                {"Unidad C", "Marcos Sanchez Cruz"      , "Galerias Celaya", "14:19", "Gasolinar Eje", "14:00", "0 Horas, 19 Minutos","0 Horas, 15 Minutos","4 Minutos"},
+                {"Unidad D", "Pablo Ruiz Estrada"       , "Mercado Hidalgo", "14:13", "Pepsi", "13:59", "0 Horas, 14 Minutos","0 Horas, 13 Minutos","1 Minutos"},
+                {"Unidad E", "Salvador Ramirez Garcia"  , "Corona", "14:22", "Aurrera por Vias", "14:07", "0 Horas, 14 Minutos","0 Horas, 18 Minutos","4 Minutos"},
+                {"Unidad F", "Jorge Luis Estrada Orozco", "Parque Celaya", "14:30","Bachoco", "14:06", "0 Horas, 24 Minutos","0 Horas, 10 Minutos","14 Minutos"},
+                {"Unidad G", "Alejando Lopez Rodriguez" , "Pepsi", "14:22", "Bachoco", "14:02", "0 Horas, 20 Minutos","0 Horas, 18 Minutos","2 Minutos"}
             },
             new String [] {
-                "Fecha", "Unidad", "Operador", "Ultima Ubicacion", "Hora", "Penultima Ubicacion", "Hora","Tiempo Recorrdio","Tiempo Promedio","Diferencia"
+                "Unidad", "Operador", "Ubicacion A", "Hora", "Ubicacion B", "Hora","Tiempo entre Ubicaciones","Promedio entre todas las rutas","Diferencia"
             }
         ));
-        jTable1.setRowSelectionAllowed(false);
-        jScrollPane1.setViewportView(jTable1);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
+        jScrollPane1.setViewportView(tableUnidades);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(42, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1300, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(34, 34, 34)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
@@ -102,27 +89,26 @@ public class TablaRegistroUnidades extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TablaRegistroUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TablaUnidad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TablaRegistroUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TablaUnidad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TablaRegistroUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TablaUnidad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TablaRegistroUnidades.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TablaUnidad.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TablaRegistroUnidades().setVisible(true);
+                new TablaUnidad().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tableUnidades;
     // End of variables declaration//GEN-END:variables
 }
