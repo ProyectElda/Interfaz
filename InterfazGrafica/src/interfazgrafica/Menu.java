@@ -139,7 +139,7 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        new TablaUnidad().setVisible(true);
+        new ComboboxUnidades().setVisible(true);
         //this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
