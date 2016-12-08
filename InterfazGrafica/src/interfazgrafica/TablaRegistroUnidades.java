@@ -7,10 +7,6 @@ package interfazgrafica;
 
 import javax.swing.JScrollPane;
 
-/**
- *
- * @author bakka
- */
 public class TablaRegistroUnidades extends javax.swing.JFrame {
 
     /**
